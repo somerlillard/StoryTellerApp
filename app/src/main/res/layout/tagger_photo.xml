@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".PhotoTagger">
+    <ImageView
+        android:layout_width="90pt"
+        android:layout_height="70pt"
+        android:layout_gravity="center"
+        android:layout_marginTop="10pt"
+        android:layout_marginBottom="10pt"
+        android:id="@+id/mainimg"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".MainActivity"
+        android:layout_marginBottom="5pt">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="10pt"
+            android:text="Tags: "
+            android:textAlignment="center"
+            android:textSize="18pt"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="10pt"
+            android:id="@+id/tags"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5pt">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="camera"
+            android:layout_marginHorizontal="10pt"
+            android:textSize="12pt"
+            android:onClick="startCamera"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:layout_marginHorizontal="10pt"
+            android:textSize="12pt"
+            android:id="@+id/save"
+            android:onClick="saveImage_Tags"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5pt">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find"
+            android:layout_marginHorizontal="10pt"
+            android:textSize="14pt"
+            android:onClick="findButton"
+            />
+
+        <EditText
+            android:layout_width="60pt"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20pt"
+            android:text=""
+            android:textSize="10pt"
+            android:id="@+id/find"
+            />
+    </LinearLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="100pt"
+        android:id="@+id/mylist1"
+        android:layout_marginHorizontal="7pt"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70pt"
+            android:layout_marginTop="5pt"
+            android:onClick="back"
+            />
+    </LinearLayout>
+</LinearLayout>

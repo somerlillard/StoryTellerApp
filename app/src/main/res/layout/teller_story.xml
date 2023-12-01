@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Story Board"
+        android:textSize="20pt"
+        android:gravity="center"
+        android:layout_marginLeft="35pt"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5pt"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find"
+            android:layout_marginHorizontal="10pt"
+            android:textSize="14pt"
+            android:onClick="findButton"
+            />
+
+        <EditText
+            android:layout_width="80pt"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10pt"
+            android:text=""
+            android:textSize="10pt"
+            android:id="@+id/find"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30pt"
+            android:id="@+id/check"
+            android:onClick="Check"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Include sketches"
+            android:textSize="10pt"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:orientation="vertical"
+        >
+
+        <ListView
+            android:id="@+id/mylist"
+            android:layout_width="wrap_content"
+            android:layout_height="80pt"
+            android:layout_marginHorizontal="10pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selection"
+            android:text="You selected: "
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="150pt"
+            android:layout_height="80pt"
+            android:layout_marginTop="15pt"
+            android:layout_marginHorizontal="10pt"
+            android:text="Story will appear here"
+            android:id="@+id/story"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Story"
+            android:layout_marginLeft="40pt"
+            android:layout_gravity="center"
+            android:onClick="submitHTTP"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginLeft="10pt"
+            android:layout_gravity="center"
+            android:onClick="back"
+            />
+    </LinearLayout>
+</LinearLayout>
